@@ -1,0 +1,287 @@
+@font-face
+{
+    font-family: "inter";
+    src: url("/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf");
+    font-weight: 100 900;
+}
+
+*,*::after,*::after
+{
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+:root
+{
+   --LimeGreen: hsl(163, 72%, 41%);
+   --BrightRed: hsl(356, 69%, 56%);
+
+   --Facebook: hsl(208, 92%, 53%);
+   --Twitter: hsl(203, 89%, 53%);
+   
+   --Instagram: linear-gradient(95deg, hsl(37, 97%, 70%) ,  hsl(329, 70%, 58%) );
+   --YouTube: hsl(348, 97%, 39%);
+
+   --Toggle_dark: linear-gradient(95deg, hsl(210, 78%, 56%) , hsl(146, 68%, 55%) );
+   --Toggle_light: hsl(230, 22%, 74%);
+
+    /* dark theme */
+    --VeryDarkBlue: hsl(230, 17%, 14%);
+    --VeryDarkBlue: hsl(232, 19%, 15%);
+    --DarkDesaturatedBlue: hsl(228, 28%, 20%);
+    --DesaturatedBlue: hsl(228, 34%, 66%);
+    --White: hsl(0, 0%, 100%);
+
+    /*light theme*/
+    --White: hsl(0, 0%, 100%);
+    --VeryPaleBlue: hsl(225, 100%, 98%);
+    --LightGrayishBlue: hsl(227, 47%, 96%);
+    --DarkGrayishBlue: hsl(228, 12%, 44%);
+    --VeryDarkBlue: hsl(230, 17%, 14%);
+
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    background-color: var(--White);
+    color: var(--Toggle_dark);
+    font-family: "inter";
+    padding: 5rem 10rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*font styles */
+.x_small { font-size: 1rem; font-weight: 700; letter-spacing: 0.05rem;}
+.small { font-size: 1.2rem; font-weight: 600;}
+
+.medium{ font-size: 2.5rem;}
+.large { font-size: 4rem; font-weight: 800;}
+
+.count_type{ letter-spacing: 0.5rem; text-transform: uppercase; font-weight: 200; margin-left: 1rem; color: var(--DarkGrayishBlue);}
+.followers{text-transform: capitalize; }
+.c_up{ color: var(--LimeGreen);  text-transform: capitalize;}
+.c_down{ color: var(--BrightRed);  text-transform: capitalize;}
+
+.B{ font-weight: 700;}
+.Mb{ font-weight: 500;}
+.T{ font-weight: 300;}
+
+
+/* Added Styles*/
+
+
+/* backgrounds*/
+.b_fb{ background: var(--Twitter);} 
+.b_tw{ background:  var(--Twitter);}
+.b_in{ background:  var(--Instagram);}
+.b_yt{ background:  var(--YouTube);}
+
+.body_dark{ background-color: var(--VeryDarkBlue); color: var(--White);}
+
+
+/*components*/
+
+.def
+{
+    text-transform: capitalize;
+}
+.overview
+{
+    font-size: 2.1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--DarkGrayishBlue);
+    
+}
+
+
+
+.header
+{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 1rem 0rem;
+    color:var(--DesaturatedBlue);
+}
+.toogle
+{
+    background-color: var(--White);
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+}
+
+.card
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color:var(--LightGrayishBlue) ;
+    border-radius: 0.6rem;
+}
+
+.card:hover
+{
+    
+    background-color: hsl(231, 11%, 87%);
+    cursor: grab;
+}
+
+.dark{ background-color: var(--DarkDesaturatedBlue);
+}
+.dark:hover{background-color:  hsl(228, 28%, 30%);}
+
+
+.card_s
+{
+    grid-column: span 1;
+    width: 100%;
+}
+
+.tile
+{
+    height: 0.5rem;
+    width: 100%;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+
+
+.site,.status
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    margin: 2rem 0rem;
+    color: var(--DesaturatedBlue);
+}
+.status p
+{
+    margin-left: 0.5rem;
+}
+.count
+{
+    text-align: center;
+    margin: 0rem 3rem;
+}
+
+.user_name
+{
+    margin-left: 0.6rem;
+}
+
+.site_def,.site_stat
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    width: 100%;
+
+}
+
+.site_def{ margin-top: 1rem; color: var(--DarkGrayishBlue);}
+.site_stat
+{
+    align-items:flex-end;
+}
+
+.rate
+{
+    align-items: center;
+    margin: 0.5rem 0rem;
+}
+
+
+
+/* containers */
+.view
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 25%;
+    align-items: center;
+    text-transform: capitalize;
+    color: var(--DarkGrayishBlue);
+
+}
+.toogle_container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: var(--Toggle_dark);
+    height: 2.3rem;
+    width: 4.3rem;
+    margin-left:0.8rem;
+    border-radius: 5rem;
+    padding: 0rem 0.2rem;
+
+}
+
+.dash
+{
+    margin: 4rem 0rem;
+    padding: 1rem 0rem;
+    display: grid;
+    grid-template: auto / repeat(4,20rem);
+    gap: 2rem;
+    justify-items: stretch;
+    justify-content: space-around;
+}
+
+.dash_small
+{
+    margin: 2rem 0rem;
+}
+
+/* responsivity */
+
+
+@media only screen and (max-width: 1068px) 
+{
+   body
+   { padding: 5rem 2rem;} 
+}
+
+@media only screen and (max-width: 900px) 
+{
+   .dash
+   { grid-template: auto / repeat(3,20rem);   gap: 2rem;}
+}
+@media only screen and (max-width: 700px) 
+{
+   .dash{grid-template: auto / repeat(2,20rem);    gap: 2rem;}
+   .view{   width: 35%;}
+}
+@media only screen and (max-width: 460px) 
+{
+    html{font-size: 50.5%;}
+}
+@media only screen and (max-width: 360px) 
+{
+    html{font-size: 42%;}
+}
+@media only screen and (max-width: 300px) 
+{
+    html{font-size: 35.5%;}
+    .dash{grid-template: auto / repeat(1,30rem);gap: 2rem;}
+}
